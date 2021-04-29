@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
 
 <head>
     <!-- Required meta tags -->
@@ -31,13 +31,39 @@
         </div>
         <br>
         <div class="row">
-            <input class="p-2" type="text " id="a1" placeholder="Enter the Color:- "
+            <style>
+                .aksh1 {
+                    animation-name: text1;
+                    animation-duration: 2s;
+                    animation-iteration-count: 1;
+                }
+
+                @keyframes text1 {
+                    0% {
+                        margin-top: 700px;
+                    }
+                }
+            </style>
+            <input class="p-2 aksh1" type="text " id="a1" placeholder="Enter the Color:- "
                 style="background: linear-gradient(to left, blue, cyan); text-align: center; color: white; font-size: 20px;">
         </div>
         <br>
+        <style>
+            .aksh {
+                animation-name: text;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+
+            @keyframes text {
+                0% {
+                    margin-left: 700px;
+                }
+            }
+        </style>
         <div class="row">
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary p-2" id="rudra3" type="button" onclick="aksh()">Submit</button>
+                <button class="btn btn-primary p-2 aksh" id="rudra3" type="button" onclick="aksh()">Submit</button>
             </div>
         </div>
     </div>
